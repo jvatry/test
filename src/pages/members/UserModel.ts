@@ -1,0 +1,17 @@
+interface IUser {
+  firstname: string;
+  lastname: string;
+  email: string;
+}
+
+export class User implements IUser {
+  firstname: string;
+  lastname: string;
+  email: string;
+
+  constructor(firstname: string, lastname: string, email: string) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.email = email;
+  }
+}
